@@ -6,4 +6,4 @@ ENV NODE_PATH /usr/local/lib/node_modules/
 ADD jest.config.js /workdir/jest.config.js
 WORKDIR /workdir
 VOLUME ["/workdir", "/workdir/__tests__"]
-ENTRYPOINT [ "/bin/bash" ]
+ENTRYPOINT [ "jest" ]
